@@ -1,5 +1,5 @@
 # main.py
-# Risk evaluation on PYNQ-Z2 using Arduino_Analog and on-board LEDs.
+# IOT-style risk evaluation on PYNQ-Z2 using Arduino_Analog and on-board LEDs.
 #
 # Sensors (Arduino connector):
 #   A0 -> light sensor (photoresistor)
