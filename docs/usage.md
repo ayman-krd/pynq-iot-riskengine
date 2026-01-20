@@ -61,7 +61,7 @@ The LEDs are controlled directly in `main.py` and display the current risk level
 - Risk 2 → LED0 and LED1 on
 - Risk 3 → LED0, LED1 and LED2 on
 
-## 2. Running the main script on the PYNQ-Z2
+## 2. Before running the main script on the PYNQ-Z2
 
 Before running the script, make sure that:
 
