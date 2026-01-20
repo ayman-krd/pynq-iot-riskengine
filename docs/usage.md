@@ -63,7 +63,32 @@ The LEDs are controlled directly in `main.py` and display the current risk level
 
 ## 2. Running the main script on the PYNQ-Z2
 
-1. Open Jupyter in your browser:
+Before running the script, make sure that:
 
-   ```text
+- InfluxDB 2.x is running on the Windows PC (for example at `http://localhost:8086`).
+- The fields `INFLUX_URL`, `INFLUX_ORG`, `INFLUX_BUCKET` and `INFLUX_TOKEN` in `sw/python/main.py`
+  have been configured according to `docs/installation.md`.
+
+Typical example in `main.py`:
+
+```python
+   INFLUX_URL = "http://192.168.2.1:8086/api/v2/write"
+   INFLUX_ORG = "Casa"
+   INFLUX_BUCKET = "sensorica"
+   INFLUX_TOKEN = "PUT_YOUR_TOKEN_HERE"
+```
+
+## 3. Open Jupyter in your browser(passsword=xilinx):
+
+```text
    http://192.168.2.99:9090
+```
+- Navigate to the project folder, for example:
+```text
+   pynq-iot-riskengine/sw/python/
+```
+- Open a terminal (New → Terminal) or use a notebook cell and run:
+```text
+    cd /home/xilinx/jupyter_notebooks/pynq-iot-riskengine/sw/python
+      python3 main.py
+```
