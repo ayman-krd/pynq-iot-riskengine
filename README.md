@@ -39,7 +39,7 @@ The system:
 - `docs/usage.md`  
   How to connect the sensors, run the script on the PYNQ and visualize the data in InfluxDB.
 
-- `presentation/iotpynq.pdf`  
+- `docs/iotpynq.pdf`  
   Slides used for the class presentation (architecture, diagrams, screenshots and demo explanation).
 
 ---
